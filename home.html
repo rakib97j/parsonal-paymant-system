@@ -113,7 +113,9 @@
             </select>
 
             <br />
-            <label class="label text-neutral font-bold">Bank Account Number</label>
+            <label class="label text-neutral font-bold"
+              >Bank Account Number</label
+            >
             <input
               id="add-money-number"
               maxlength="11"
@@ -142,7 +144,10 @@
               class="input rounded-full bg-base-200 border-none w-full"
               placeholder="Enter 4 digit pin number"
             />
-            <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">
+            <button
+              id="add-money-btn"
+              class="btn btn-primary mt-4 rounded-full"
+            >
               Add Money
             </button>
           </fieldset>
@@ -188,6 +193,49 @@
             />
             <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">
               Withdraw Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transfer Money -->
+    <section id="transfer-money" class="w-11/12 mx-auto py-5">
+      <h2 class="text-xl font-bold mb-5">Transfer Money</h2>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">User Account Number</label>
+            <input
+              id="Agent-number"
+              maxlength="11"
+              minlength="11"
+              type="text"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter 11 digit number"
+            />
+
+            <br />
+
+            <label class="label text-neutral font-bold">Amount</label>
+            <input
+              type="number"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter amount to transfer"
+            />
+
+            <br />
+
+            <label class="label text-neutral font-bold">Pin Number</label>
+            <input
+              maxlength="4"
+              minlength="4"
+              type="password"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button id="send-money-btn" class="btn btn-primary mt-4 rounded-full">
+              Send Now
             </button>
           </fieldset>
         </div>
