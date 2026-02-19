@@ -273,5 +273,63 @@
         </div>
       </div>
     </section>
+
+    <!-- Pay Bill section -->
+     <section id="pay-bill" class="w-11/12 mx-auto py-5">
+      <h2 class="text-xl font-bold mb-5">Pay Bill</h2>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Select To Pay</label>
+            <select class="select rounded-full bg-base-200 border-none w-full">
+              <option disabled selected>Select bank</option>
+              <option value="DBBL">DBBL</option>
+              <option value="NRCB">NRCB</option>
+              <option value="City Bank">City Bank</option>
+            </select>
+
+            <br />
+            <label class="label text-neutral font-bold"
+              >Biller Account Number</label
+            >
+            <input
+              id="pay-bill-number"
+              maxlength="11"
+              minlength="11"
+              type="text"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter account number"
+            />
+
+            <br />
+
+            <label class="label text-neutral font-bold">Amount to Pay</label>
+            <input
+              type="number"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Add Amount to pay"
+            />
+
+            <br />
+
+            <label class="label text-neutral font-bold">Pin Number</label>
+            <input
+              maxlength="4"
+              minlength="4"
+              type="password"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button
+              id="pay-bill-btn"
+              class="btn btn-primary mt-4 rounded-full"
+            >
+             Pay Now
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
