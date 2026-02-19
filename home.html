@@ -205,7 +205,9 @@
       <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
           <fieldset class="fieldset">
-            <label class="label text-neutral font-bold">User Account Number</label>
+            <label class="label text-neutral font-bold"
+              >User Account Number</label
+            >
             <input
               id="Agent-number"
               maxlength="11"
@@ -234,8 +236,38 @@
               class="input rounded-full bg-base-200 border-none w-full"
               placeholder="Enter 4 digit pin number"
             />
-            <button id="send-money-btn" class="btn btn-primary mt-4 rounded-full">
+            <button
+              id="send-money-btn"
+              class="btn btn-primary mt-4 rounded-full"
+            >
               Send Now
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Bonus section -->
+    <section id="get-bonus" class="w-11/12 mx-auto py-5">
+      <h2 class="text-xl font-bold mb-5">Get Bonus</h2>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold"
+              >Enter Bonus Coupon</label
+            >
+            <input
+              id="coupon-number"
+              type="text"
+              class="input rounded-full bg-base-200 border-none w-full"
+              placeholder="Enter your coupon"
+            />
+
+            <button
+              id="get-bonus-btn"
+              class="btn btn-primary mt-4 rounded-full"
+            >
+              Get Bonus
             </button>
           </fieldset>
         </div>
